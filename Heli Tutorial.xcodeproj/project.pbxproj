@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EBF24519182ADD660052CA5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF24518182ADD660052CA5E /* Foundation.framework */; };
+		EBF2451B182ADD660052CA5E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF2451A182ADD660052CA5E /* CoreGraphics.framework */; };
+		EBF2451D182ADD660052CA5E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF2451C182ADD660052CA5E /* UIKit.framework */; };
+		EBF24523182ADD660052CA5E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EBF24521182ADD660052CA5E /* InfoPlist.strings */; };
+		EBF24525182ADD660052CA5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF24524182ADD660052CA5E /* main.m */; };
+		EBF24529182ADD660052CA5E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF24528182ADD660052CA5E /* AppDelegate.m */; };
+		EBF2452C182ADD660052CA5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBF2452A182ADD660052CA5E /* Main.storyboard */; };
+		EBF2452F182ADD660052CA5E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF2452E182ADD660052CA5E /* ViewController.m */; };
+		EBF24531182ADD660052CA5E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBF24530182ADD660052CA5E /* Images.xcassets */; };
+		EBF24538182ADD660052CA5E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF24537182ADD660052CA5E /* XCTest.framework */; };
+		EBF24539182ADD660052CA5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF24518182ADD660052CA5E /* Foundation.framework */; };
+		EBF2453A182ADD660052CA5E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF2451C182ADD660052CA5E /* UIKit.framework */; };
+		EBF24542182ADD660052CA5E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EBF24540182ADD660052CA5E /* InfoPlist.strings */; };
+		EBF24544182ADD660052CA5E /* Heli_TutorialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF24543182ADD660052CA5E /* Heli_TutorialTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EBF2453B182ADD660052CA5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBF2450D182ADD650052CA5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBF24514182ADD650052CA5E;
+			remoteInfo = "Heli Tutorial";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EBF24515182ADD660052CA5E /* Heli Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Heli Tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBF24518182ADD660052CA5E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EBF2451A182ADD660052CA5E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EBF2451C182ADD660052CA5E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EBF24520182ADD660052CA5E /* Heli Tutorial-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Heli Tutorial-Info.plist"; sourceTree = "<group>"; };
+		EBF24522182ADD660052CA5E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EBF24524182ADD660052CA5E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EBF24526182ADD660052CA5E /* Heli Tutorial-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Heli Tutorial-Prefix.pch"; sourceTree = "<group>"; };
+		EBF24527182ADD660052CA5E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EBF24528182ADD660052CA5E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EBF2452B182ADD660052CA5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EBF2452D182ADD660052CA5E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EBF2452E182ADD660052CA5E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EBF24530182ADD660052CA5E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EBF24536182ADD660052CA5E /* Heli TutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Heli TutorialTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBF24537182ADD660052CA5E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EBF2453F182ADD660052CA5E /* Heli TutorialTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Heli TutorialTests-Info.plist"; sourceTree = "<group>"; };
+		EBF24541182ADD660052CA5E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EBF24543182ADD660052CA5E /* Heli_TutorialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Heli_TutorialTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBF24512182ADD650052CA5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBF2451B182ADD660052CA5E /* CoreGraphics.framework in Frameworks */,
+				EBF2451D182ADD660052CA5E /* UIKit.framework in Frameworks */,
+				EBF24519182ADD660052CA5E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBF24533182ADD660052CA5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBF24538182ADD660052CA5E /* XCTest.framework in Frameworks */,
+				EBF2453A182ADD660052CA5E /* UIKit.framework in Frameworks */,
+				EBF24539182ADD660052CA5E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EBF2450C182ADD650052CA5E = {
+			isa = PBXGroup;
+			children = (
+				EBF2451E182ADD660052CA5E /* Heli Tutorial */,
+				EBF2453D182ADD660052CA5E /* Heli TutorialTests */,
+				EBF24517182ADD660052CA5E /* Frameworks */,
+				EBF24516182ADD660052CA5E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EBF24516182ADD660052CA5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBF24515182ADD660052CA5E /* Heli Tutorial.app */,
+				EBF24536182ADD660052CA5E /* Heli TutorialTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBF24517182ADD660052CA5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBF24518182ADD660052CA5E /* Foundation.framework */,
+				EBF2451A182ADD660052CA5E /* CoreGraphics.framework */,
+				EBF2451C182ADD660052CA5E /* UIKit.framework */,
+				EBF24537182ADD660052CA5E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EBF2451E182ADD660052CA5E /* Heli Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				EBF24527182ADD660052CA5E /* AppDelegate.h */,
+				EBF24528182ADD660052CA5E /* AppDelegate.m */,
+				EBF2452A182ADD660052CA5E /* Main.storyboard */,
+				EBF2452D182ADD660052CA5E /* ViewController.h */,
+				EBF2452E182ADD660052CA5E /* ViewController.m */,
+				EBF24530182ADD660052CA5E /* Images.xcassets */,
+				EBF2451F182ADD660052CA5E /* Supporting Files */,
+			);
+			path = "Heli Tutorial";
+			sourceTree = "<group>";
+		};
+		EBF2451F182ADD660052CA5E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EBF24520182ADD660052CA5E /* Heli Tutorial-Info.plist */,
+				EBF24521182ADD660052CA5E /* InfoPlist.strings */,
+				EBF24524182ADD660052CA5E /* main.m */,
+				EBF24526182ADD660052CA5E /* Heli Tutorial-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EBF2453D182ADD660052CA5E /* Heli TutorialTests */ = {
+			isa = PBXGroup;
+			children = (
+				EBF24543182ADD660052CA5E /* Heli_TutorialTests.m */,
+				EBF2453E182ADD660052CA5E /* Supporting Files */,
+			);
+			path = "Heli TutorialTests";
+			sourceTree = "<group>";
+		};
+		EBF2453E182ADD660052CA5E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EBF2453F182ADD660052CA5E /* Heli TutorialTests-Info.plist */,
+				EBF24540182ADD660052CA5E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBF24514182ADD650052CA5E /* Heli Tutorial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBF24547182ADD660052CA5E /* Build configuration list for PBXNativeTarget "Heli Tutorial" */;
+			buildPhases = (
+				EBF24511182ADD650052CA5E /* Sources */,
+				EBF24512182ADD650052CA5E /* Frameworks */,
+				EBF24513182ADD650052CA5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Heli Tutorial";
+			productName = "Heli Tutorial";
+			productReference = EBF24515182ADD660052CA5E /* Heli Tutorial.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EBF24535182ADD660052CA5E /* Heli TutorialTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBF2454A182ADD660052CA5E /* Build configuration list for PBXNativeTarget "Heli TutorialTests" */;
+			buildPhases = (
+				EBF24532182ADD660052CA5E /* Sources */,
+				EBF24533182ADD660052CA5E /* Frameworks */,
+				EBF24534182ADD660052CA5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBF2453C182ADD660052CA5E /* PBXTargetDependency */,
+			);
+			name = "Heli TutorialTests";
+			productName = "Heli TutorialTests";
+			productReference = EBF24536182ADD660052CA5E /* Heli TutorialTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBF2450D182ADD650052CA5E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Attila Csala";
+				TargetAttributes = {
+					EBF24535182ADD660052CA5E = {
+						TestTargetID = EBF24514182ADD650052CA5E;
+					};
+				};
+			};
+			buildConfigurationList = EBF24510182ADD650052CA5E /* Build configuration list for PBXProject "Heli Tutorial" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBF2450C182ADD650052CA5E;
+			productRefGroup = EBF24516182ADD660052CA5E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBF24514182ADD650052CA5E /* Heli Tutorial */,
+				EBF24535182ADD660052CA5E /* Heli TutorialTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBF24513182ADD650052CA5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBF24531182ADD660052CA5E /* Images.xcassets in Resources */,
+				EBF24523182ADD660052CA5E /* InfoPlist.strings in Resources */,
+				EBF2452C182ADD660052CA5E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBF24534182ADD660052CA5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBF24542182ADD660052CA5E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBF24511182ADD650052CA5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBF2452F182ADD660052CA5E /* ViewController.m in Sources */,
+				EBF24529182ADD660052CA5E /* AppDelegate.m in Sources */,
+				EBF24525182ADD660052CA5E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBF24532182ADD660052CA5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBF24544182ADD660052CA5E /* Heli_TutorialTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EBF2453C182ADD660052CA5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBF24514182ADD650052CA5E /* Heli Tutorial */;
+			targetProxy = EBF2453B182ADD660052CA5E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EBF24521182ADD660052CA5E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBF24522182ADD660052CA5E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EBF2452A182ADD660052CA5E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBF2452B182ADD660052CA5E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EBF24540182ADD660052CA5E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBF24541182ADD660052CA5E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EBF24545182ADD660052CA5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EBF24546182ADD660052CA5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EBF24548182ADD660052CA5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Heli Tutorial/Heli Tutorial-Prefix.pch";
+				INFOPLIST_FILE = "Heli Tutorial/Heli Tutorial-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EBF24549182ADD660052CA5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Heli Tutorial/Heli Tutorial-Prefix.pch";
+				INFOPLIST_FILE = "Heli Tutorial/Heli Tutorial-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EBF2454B182ADD660052CA5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Heli Tutorial.app/Heli Tutorial";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Heli Tutorial/Heli Tutorial-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Heli TutorialTests/Heli TutorialTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EBF2454C182ADD660052CA5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Heli Tutorial.app/Heli Tutorial";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Heli Tutorial/Heli Tutorial-Prefix.pch";
+				INFOPLIST_FILE = "Heli TutorialTests/Heli TutorialTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBF24510182ADD650052CA5E /* Build configuration list for PBXProject "Heli Tutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBF24545182ADD660052CA5E /* Debug */,
+				EBF24546182ADD660052CA5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBF24547182ADD660052CA5E /* Build configuration list for PBXNativeTarget "Heli Tutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBF24548182ADD660052CA5E /* Debug */,
+				EBF24549182ADD660052CA5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EBF2454A182ADD660052CA5E /* Build configuration list for PBXNativeTarget "Heli TutorialTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBF2454B182ADD660052CA5E /* Debug */,
+				EBF2454C182ADD660052CA5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EBF2450D182ADD650052CA5E /* Project object */;
+}
