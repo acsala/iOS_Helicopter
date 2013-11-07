@@ -21,6 +21,10 @@
 		EBF2453A182ADD660052CA5E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF2451C182ADD660052CA5E /* UIKit.framework */; };
 		EBF24542182ADD660052CA5E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EBF24540182ADD660052CA5E /* InfoPlist.strings */; };
 		EBF24544182ADD660052CA5E /* Heli_TutorialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF24543182ADD660052CA5E /* Heli_TutorialTests.m */; };
+		EBF24551182ADDE10052CA5E /* Obsticle.png in Resources */ = {isa = PBXBuildFile; fileRef = EBF2454D182ADDE10052CA5E /* Obsticle.png */; };
+		EBF24552182ADDE10052CA5E /* HeliDown.png in Resources */ = {isa = PBXBuildFile; fileRef = EBF2454E182ADDE10052CA5E /* HeliDown.png */; };
+		EBF24553182ADDE10052CA5E /* HeliUp.png in Resources */ = {isa = PBXBuildFile; fileRef = EBF2454F182ADDE10052CA5E /* HeliUp.png */; };
+		EBF24554182ADDE10052CA5E /* HeliBackGround.png in Resources */ = {isa = PBXBuildFile; fileRef = EBF24550182ADDE10052CA5E /* HeliBackGround.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		EBF2453F182ADD660052CA5E /* Heli TutorialTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Heli TutorialTests-Info.plist"; sourceTree = "<group>"; };
 		EBF24541182ADD660052CA5E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EBF24543182ADD660052CA5E /* Heli_TutorialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Heli_TutorialTests.m; sourceTree = "<group>"; };
+		EBF2454D182ADDE10052CA5E /* Obsticle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Obsticle.png; sourceTree = "<group>"; };
+		EBF2454E182ADDE10052CA5E /* HeliDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HeliDown.png; sourceTree = "<group>"; };
+		EBF2454F182ADDE10052CA5E /* HeliUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HeliUp.png; sourceTree = "<group>"; };
+		EBF24550182ADDE10052CA5E /* HeliBackGround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HeliBackGround.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +134,10 @@
 		EBF2451F182ADD660052CA5E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EBF2454D182ADDE10052CA5E /* Obsticle.png */,
+				EBF2454E182ADDE10052CA5E /* HeliDown.png */,
+				EBF2454F182ADDE10052CA5E /* HeliUp.png */,
+				EBF24550182ADDE10052CA5E /* HeliBackGround.png */,
 				EBF24520182ADD660052CA5E /* Heli Tutorial-Info.plist */,
 				EBF24521182ADD660052CA5E /* InfoPlist.strings */,
 				EBF24524182ADD660052CA5E /* main.m */,
@@ -228,9 +240,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBF24551182ADDE10052CA5E /* Obsticle.png in Resources */,
 				EBF24531182ADD660052CA5E /* Images.xcassets in Resources */,
+				EBF24552182ADDE10052CA5E /* HeliDown.png in Resources */,
 				EBF24523182ADD660052CA5E /* InfoPlist.strings in Resources */,
 				EBF2452C182ADD660052CA5E /* Main.storyboard in Resources */,
+				EBF24553182ADDE10052CA5E /* HeliUp.png in Resources */,
+				EBF24554182ADDE10052CA5E /* HeliBackGround.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
