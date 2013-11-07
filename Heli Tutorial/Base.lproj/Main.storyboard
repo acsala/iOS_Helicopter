@@ -109,6 +109,13 @@
                                 <rect key="frame" x="390" y="-8" width="89" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="237" translatesAutoresizingMaskIntoConstraints="NO" id="fGl-F7-kc7">
+                                <rect key="frame" x="242" y="299" width="237" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -129,6 +136,7 @@
                         <outlet property="Intro3" destination="LFc-YM-6R9" id="Wqb-29-WmR"/>
                         <outlet property="Obstacle" destination="3ie-iK-Hv4" id="1Qi-xp-hQJ"/>
                         <outlet property="Obstacle2" destination="NN5-2v-atz" id="FQK-mg-3fT"/>
+                        <outlet property="Score" destination="fGl-F7-kc7" id="b20-Nz-Pd5"/>
                         <outlet property="Top1" destination="hia-Rd-fEw" id="g7c-kR-qpR"/>
                         <outlet property="Top2" destination="w4H-i1-qh7" id="CAh-Ge-LsW"/>
                         <outlet property="Top3" destination="p2W-iZ-JQz" id="THV-IN-aBI"/>

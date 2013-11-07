@@ -13,6 +13,8 @@ int Y;
 BOOL Start;
 
 int RandomPosition;
+int ScoreNumber;
+int HighScore;
 
 @interface ViewController : UIViewController
 {
@@ -44,8 +46,17 @@ int RandomPosition;
     IBOutlet UIImageView *Top6;
     IBOutlet UIImageView *Top7;
     
+    IBOutlet UILabel *Score;
+    
+    NSTimer *Scorer;
+    
+    
 }
 
 -(void)HeliMove;
+-(void)Collision;
+-(void)EndGame;
+-(void)NewGame;
+-(void)Scoring;
 
 @end

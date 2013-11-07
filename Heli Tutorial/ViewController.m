@@ -14,8 +14,144 @@
 
 @implementation ViewController
 
--(void)HeliMove
-{
+-(void)Collision{
+    
+    //if helicopter and obsticle touch then we run EndGame
+    if (CGRectIntersectsRect(Heli.frame, Obstacle.frame)) {
+        [self EndGame];
+    }
+    
+    if (CGRectIntersectsRect(Heli.frame, Obstacle2.frame)) {
+        [self EndGame];
+    }
+    
+    if (CGRectIntersectsRect(Heli.frame, Bottom1.frame)) {
+        [self EndGame];
+    }
+    
+    if (CGRectIntersectsRect(Heli.frame, Bottom2.frame)) {
+        [self EndGame];
+    }
+    
+    if (CGRectIntersectsRect(Heli.frame, Bottom3.frame)) {
+        [self EndGame];
+    }
+    
+    if (CGRectIntersectsRect(Heli.frame, Bottom4.frame)) {
+        [self EndGame];
+    }
+    
+    if (CGRectIntersectsRect(Heli.frame, Bottom5.frame)) {
+        [self EndGame];
+    }
+    
+    if (CGRectIntersectsRect(Heli.frame, Bottom6.frame)) {
+        [self EndGame];
+    }
+    
+    if (CGRectIntersectsRect(Heli.frame, Bottom7.frame)) {
+        [self EndGame];
+    }
+    
+    if (CGRectIntersectsRect(Heli.frame, Top1.frame)) {
+        [self EndGame];
+    }
+    
+    if (CGRectIntersectsRect(Heli.frame, Top2.frame)) {
+        [self EndGame];
+    }
+    
+    if (CGRectIntersectsRect(Heli.frame, Top3.frame)) {
+        [self EndGame];
+    }
+    
+    if (CGRectIntersectsRect(Heli.frame, Top4.frame)) {
+        [self EndGame];
+    }
+    
+    if (CGRectIntersectsRect(Heli.frame, Top5.frame)) {
+        [self EndGame];
+    }
+    
+    if (CGRectIntersectsRect(Heli.frame, Top6.frame)) {
+        [self EndGame];
+    }
+    
+    if (CGRectIntersectsRect(Heli.frame, Top7.frame)) {
+        [self EndGame];
+    }
+    
+    //if helicopter touch down green line at the beginning
+    if (Heli.center.y > 270) {
+        [self EndGame];
+    }
+    
+    if (Heli.center.y < 55) {
+        [self EndGame];
+    }
+    
+}
+
+-(void)EndGame{
+    
+    //check if we brake highscore
+    if (ScoreNumber > HighScore) {
+        HighScore = ScoreNumber;
+        
+        //take the integer highscore and save as HighScoreSaved
+        [[NSUserDefaults standardUserDefaults] setInteger:HighScore forKey:@"HighScoreSaved"];
+    }
+    
+    Heli.hidden = YES;
+    //stop motion
+    [timer invalidate];
+    [Scorer invalidate];
+    
+    //run a new game after a five second pause
+    [self performSelector:@selector(NewGame) withObject:Nil afterDelay:5];
+}
+
+-(void)NewGame{
+    
+    Bottom1.hidden = YES;
+    Bottom2.hidden = YES;
+    Bottom3.hidden = YES;
+    Bottom4.hidden = YES;
+    Bottom5.hidden = YES;
+    Bottom6.hidden = YES;
+    Bottom7.hidden = YES;
+    
+    Top1.hidden = YES;
+    Top2.hidden = YES;
+    Top3.hidden = YES;
+    Top4.hidden = YES;
+    Top5.hidden = YES;
+    Top6.hidden = YES;
+    Top7.hidden = YES;
+    
+    Obstacle.hidden = YES;
+    Obstacle2.hidden = YES;
+    
+    Intro1.hidden = NO;
+    Intro2.hidden = NO;
+    Intro3.hidden = NO;
+    
+    Heli.hidden = NO;
+    Heli.center = CGPointMake(42, 136);
+    Heli.image = [UIImage imageNamed:@"HeliUp.png"];
+    
+    Start = YES;
+    
+    ScoreNumber = 0;
+    Score.text = [NSString stringWithFormat:@"Score: 0"];
+    Intro3.text = [NSString stringWithFormat:@"High Score: %i", HighScore];
+    
+}
+
+-(void)HeliMove{
+    
+    //run Collision to check if there is collision
+    [self Collision];
     
     Heli.center = CGPointMake(Heli.center.x, Heli.center.y + Y);
     
@@ -102,9 +238,16 @@
     }
 }
 
+-(void)Scoring{
+    
+    ScoreNumber = ScoreNumber + 1;
+    
+    Score.text = [NSString stringWithFormat:@"Score: %i", ScoreNumber];
+}
+
+
 //runt the code if screen is touched
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
-{
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     
     if (Start == YES) {
         
@@ -115,6 +258,9 @@
         
         //set up timer
         timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(HeliMove) userInfo:Nil repeats:YES];
+        
+        //start the timer run every one second the method Scoring
+        Scorer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(Scoring) userInfo:Nil repeats:YES];
         
         Start = NO;
         
@@ -194,14 +340,12 @@
 }
 
 //if we stop touching the screen
--(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
-{
+-(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
     Y = 7;
     Heli.image = [UIImage imageNamed:@"HeliDown.png"];
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad{
     Start = YES;
     
     Bottom1.hidden = YES;
@@ -223,12 +367,16 @@
     Obstacle.hidden = YES;
     Obstacle2.hidden = YES;
     
+    //take the integer, called HighScore, set it to whatever value we have saved under HighScoreSaved
+    HighScore = [[NSUserDefaults standardUserDefaults] integerForKey:@"HighScoreSaved"];
+    Intro3.text = [NSString stringWithFormat:@"High Score: %i", HighScore];
+    
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
